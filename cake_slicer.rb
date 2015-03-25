@@ -6,6 +6,6 @@ class CakeSlicer
   end
 
   def serve_a_slice_from(cake)
-    twitter_client.tweet(cake.description)
+    twitter_client.tweet(cake.tweetable_description)
   end
 end

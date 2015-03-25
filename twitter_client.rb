@@ -1,7 +1,7 @@
 class TwitterClient
   def tweet(message)
-    puts message
-    #client.update("I'm tweeting with @gem!")
+    #puts message
+    client.update(message)
   end
 
   private

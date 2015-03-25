@@ -4,25 +4,25 @@ require_relative "./cake_slicer"
 require 'io/console'
 
 class CakeSupervisor
-  attr_accessor :check_for_cake_cutting
-
-  def initialize
-    @check_for_cake_cutting = true
-  end
-
   def supervise_cake_cutting
     twitter_handle = ask_for_twitter_handle
-    tweeting_cake = TweetingCake.new(twitter_handle)
+    tweeting_cake = TweetingCake.new(
+      name_on_cake: twitter_handle
+      )
     cake_slicer = CakeSlicer.new(TwitterClient.new)
 
+    give_cake_slicing_instructions
     wait_for_cake_to_get_sliced
 
     cake_slicer.serve_a_slice_from(tweeting_cake)
-
-    #exit
   end
 
   private
+
+  def give_cake_slicing_instructions
+    puts "Now cut the cake with the cake slicer!"
+    STDOUT.flush
+  end
 
   def ask_for_twitter_handle
     puts "what is your twitter handle?"

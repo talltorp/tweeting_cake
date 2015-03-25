@@ -1,12 +1,12 @@
 class TweetingCake
   attr_reader :name_on_cake
 
-  def initialize(name_on_cake)
-    @name_on_cake = name_on_cake
+  def initialize(args = {})
+    @name_on_cake = args[:name_on_cake]
   end
 
-  def description
-    "#tweeting_cake detected #{twitter_handle}. They must be celebrating something #awesome!"
+  def tweetable_description
+    "#tweeting_cake is served! #{twitter_handle} must be celebrating something #awesome!"
   end
 
   private
