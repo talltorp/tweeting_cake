@@ -1,5 +1,7 @@
 # A cake that can tweet
 
+See examples at https://twitter.com/tweeting_cake
+
 This is part of the "Internet of ordinary things" movement:  
 We take ordinary things and ask kids what they would do if it was connected to a computer and/or the internet.
 
