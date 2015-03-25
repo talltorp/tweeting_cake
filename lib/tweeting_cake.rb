@@ -1,1 +1,5 @@
-tweeting_cake.rb
+require "tweeting_cake/cake_supervisor"
+
+module TweetingCake
+  
+end

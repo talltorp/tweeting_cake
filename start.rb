@@ -1,4 +1,4 @@
-require_relative "./cake_supervisor"
+require_relative "./lib/tweeting_cake/cake_supervisor"
 
-cake_supervisor = CakeSupervisor.new
+cake_supervisor = TweetingCake::CakeSupervisor.new
 cake_supervisor.supervise_cake_cutting

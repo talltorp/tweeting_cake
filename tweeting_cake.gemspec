@@ -1,11 +1,11 @@
-# coding: utf-8
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'tweeting_cake/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "tweeting_cake"
-  spec.version       = ClickSession::VERSION
+  spec.version       = TweetingCake::VERSION
   spec.authors       = ["Tobias Talltorp"]
   spec.email         = ["tobias@talltorp.se"]
   spec.summary       = "Make a cake tweet with a Makey Makey"
