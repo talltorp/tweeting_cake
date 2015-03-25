@@ -22,6 +22,11 @@ __Ruby >= 2.0__
 ## Installation
 ```gem install tweeting_cake```
 
+__Makey Makey installation__  
+1. The `earth` goes in the __cake__  
+2. The `space bar` connects to the __cake slicer__  
+
+## Configuration
 1. Create an app and developer tokens at http://dev.twitter.com
 2. Add these tokens to these environment variables
   * TWITTER_CONSUMER_KEY
@@ -34,8 +39,11 @@ In development, you can add this configuration in a file called `.env`
 More info at https://github.com/bkeepers/dotenv
 
 ## Usage
-Once installed, run this command to post a tweet when cake is cut and served
-```bash
-bundle exec ./bin/supervise_cutting_of_tweeting_cake
+Once installed, open `irb` and enter the following lines
+```
+require 'tweeting_cake'
+
+cake_supervisor = TweetingCake::CakeSupervisor.new
+cake_supervisor.supervise_cake_cutting
  ```
 
