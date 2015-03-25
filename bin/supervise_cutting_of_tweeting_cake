@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require 'tweeting_cake/cake_supervisor'
+p "tt"
+cake_supervisor = TweetingCake::CakeSupervisor.new
+cake_supervisor.supervise_cake_cutting
